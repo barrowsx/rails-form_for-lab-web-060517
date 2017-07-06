@@ -60,6 +60,7 @@ describe 'Show page' do
   let(:school_class) { SchoolClass.create(title: "Computer Science", room_number: 5) }
 
   it 'renders properly' do
+    # byebug
     visit school_class_path(school_class)
     expect(page.status_code).to eq(200)
   end
